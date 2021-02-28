@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Kunalparihar2494.github.io/amazon-clone",
+  "homepage": "https://github.com/Kunalparihar2494/amazon-clone.gitnpm",
   "name": "amazon-clone",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "predeply": "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
