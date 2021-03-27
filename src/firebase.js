@@ -1,11 +1,22 @@
 /* eslint-disable no-unused-vars */
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import firebase from "firebase";
+import "firebase/auth"
+
 const firebaseConfig = {
-    apiKey: "AIzaSyB0aDCkmw_8KitzFJCRc9VNyywAP-hQCB4",
-    authDomain: "challenge-e50a4.firebaseapp.com",
-    projectId: "challenge-e50a4",
-    storageBucket: "challenge-e50a4.appspot.com",
-    messagingSenderId: "643408150222",
-    appId: "1:643408150222:web:f7ed204fa9666cd3b95a9f",
-    measurementId: "G-KQ9Z8M17HP"
-  };
+  apiKey: "AIzaSyCjqiMkUGBRmP0tUx6U29cSuvb6Q3e7myc",
+  authDomain: "react-3eed0.firebaseapp.com",
+  projectId: "react-3eed0",
+  storageBucket: "react-3eed0.appspot.com",
+  messagingSenderId: "520409888624",
+  appId: "1:520409888624:web:b045e2a65cbfdcc3e8c1b5",
+  measurementId: "G-6GDQTEVR5E"
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebaseApp.firestore();
+const auth = firebaseApp.auth();
+console.log('firebase-',auth);
+export {db,auth};
